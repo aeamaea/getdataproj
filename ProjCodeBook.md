@@ -1,0 +1,39 @@
+Code Book for Getting and Cleaning Data Final Project
+========================================================
+
+## NOTE:
+Please note that most of the rationale and analysis of how/why this was done is sitting in the ProjReadMe.Rmd file that accompanies this script and this Code Book. Code Book is only used to describe the columns I extracted out and the summarization that I did using the reshape2 library and melt/dcast functions:  
+
+### Variables Selection criteria
+The project description says to use your own judgement and select _some_ mean/std-dev columns from the 563 variables fully built data frame (561 x train etc, and subject and activity column appended to that data frame.)
+
+Out of these the following measurements were selected because 
+
+1. I did not want to dealt with an excessive number as I don't have enough RAM
+2. I wanted to look into just the acceleration and the gravity parameters for future analysis.
+
+### The Variables Selected 
+
+
+The following Variables are extracted and included in my Tidy Data Set after Dcast()
+
+"subject" : 										This identifies the Subject                                
+"actlabel" : 										This is the description of activity (Walking, Laying etc.)                                
+
+"tbody.acceleration.mean.x" :    					Gravity Acceleration Mean, X Axis           
+"tbody.acceleration.mean.y" : 						Gravity Acceleration Mean, Y Axis               
+"tbody.acceleration.mean.z" : 						Gravity Acceleration Mean, Z Axis              
+
+"tbody.acceleration.standarddeviation.x"       		Body Acceleration Standard Deviation, X Axis
+"tbody.acceleration.standarddeviation.y"    		Body Acceleration Standard Deviation, Y Axis    
+"tbody.acceleration.standarddeviation.z"    		Body Acceleration Standard Deviation, Z Axis   
+"tgravity.acceleration.mean.x"                      Gravity Acceleration Mean, X Axis
+ "tgravity.acceleration.mean.y"                     Gravity Acceleration Mean, Y Axis
+"tgravity.acceleration.mean.z"                      Gravity Acceleration Mean, Z Axis
+"tgravity.acceleration.standarddeviation.x"			Gravity Acceleration Standard Deviation, X Axis
+"tgravity.acceleration.standarddeviation.y"     	Gravity Acceleration Standard Deviation, Y Axis 
+"tgravity.acceleration.standarddeviation.z"     	Gravity Acceleration Standard Deviation, Z Axis 
+"angle.x.gravity.mean"                      		Gravity Angle Mean, X Axis
+"angle.y.gravity.mean"                      		Gravity Angle Mean, Y Axis
+"angle.z.gravity.mean"                      		Gravity Angle Mean, Z Axis
+"activity"											Activity Code.
