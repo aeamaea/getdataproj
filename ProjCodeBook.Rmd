@@ -4,6 +4,21 @@ Code Book for Getting and Cleaning Data Final Project
 ## NOTE:
 Please note that most of the rationale and analysis of how/why this was done is sitting in the ProjReadMe.Rmd file that accompanies this script and this Code Book. Code Book is only used to describe the columns I extracted out and the summarization that I did using the reshape2 library and melt/dcast functions:  
 
+## 
+getdataproj
+===========
+
+Getting And Cleaning Data Johns Hopkins Coursera Project
+
+This bundle has the following main files:
+
+ProjeReadMe.RMD -- The Final Class Project readme file this explains how I did what I did
+ProjCodeBook.RMD -- Explains the Variables I chose to use (not all, just some std-dev and means)
+getdata_proj_tidy_final -- This is the tidy data file that I wrote out after running through all the steps in run_analysis.R
+run_analysis.R -- This is the actual R commands I used to create the tidy data set. It has to be in the Root of the unzipped Data directory.
+
+
+
 ### Variables Selection criteria
 The project description says to use your own judgement and select _some_ mean/std-dev columns from the 563 variables fully built data frame (561 x train etc, and subject and activity column appended to that data frame.)
 
